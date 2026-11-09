@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GreenScape Outdoor Living - Landscaping &amp; Garden Design in Nashville, TN | Design, Build, Maintain</title>
+<meta name="description" content="GreenScape Outdoor Living, Nashville TN. Landscape design and build, patios, irrigation, fencing and lawn care. Browse our project gallery and request a free quote. Call (615) 555-0176.">
+<style>
+  :root{
+    --green:#1e3d2a; --green2:#2c5a3c; --moss:#48765a;
+    --stone:#e9e2d4; --stone2:#d8cdb4; --sand:#f6f1e6;
+    --white:#fff; --ink:#2b2f28; --soft:#6f7466; --line:#ddd3bd;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{background:var(--sand);color:var(--ink);
+    font-family:"Segoe UI",-apple-system,BlinkMacSystemFont,Roboto,Helvetica,Arial,sans-serif;
+    line-height:1.7;-webkit-font-smoothing:antialiased}
+  h1,h2,h3{font-family:Georgia,"Playfair Display","Times New Roman",serif;font-weight:500;line-height:1.18;color:var(--green)}
+  a{color:inherit}
+  .wrap{max-width:1140px;margin:0 auto;padding:0 22px}
+  .over{font-size:11px;letter-spacing:.42em;text-transform:uppercase;color:var(--moss);font-weight:700}
+
+  header{position:sticky;top:0;z-index:60;background:rgba(30,61,42,.98);border-bottom:1px solid rgba(216,205,180,.35)}
+  .nav{display:flex;align-items:center;justify-content:space-between;height:74px;gap:16px}
+  .brand{color:#f2ecdc;text-decoration:none;font-family:Georgia,serif;font-size:23px;letter-spacing:.03em}
+  .brand span{color:#bcd3a8}
+  .brand small{display:block;font-family:"Segoe UI",sans-serif;font-size:10px;letter-spacing:.32em;color:#9db894;font-weight:700;text-transform:uppercase}
+  .links{display:flex;gap:26px;align-items:center}
+  .links a{color:#d9e2cb;text-decoration:none;font-size:12px;letter-spacing:.2em;text-transform:uppercase;font-weight:600}
+  .links a:hover{color:#fff}
+  .callbtn{border:1px solid var(--stone2);color:#f2ecdc!important;padding:10px 18px;border-radius:999px}
+  .callbtn:hover{background:var(--green2)}
+  @media(max-width:820px){.links a:not(.callbtn){display:none}}
+
+  .hero{background:linear-gradient(160deg,var(--green) 60%,var(--green2));color:#eef3e3;padding:64px 0 56px;text-align:center}
+  .hero h1{color:#f6f1e0;font-size:clamp(34px,5.2vw,56px);max-width:760px;margin:14px auto 14px}
+  .hero h1 i{color:#bcd3a8}
+  .hero p{max-width:600px;margin:0 auto 26px;color:#c9d8ba;font-size:18px}
+  .hero .over{color:#bcd3a8}
+  .btn{display:inline-block;text-decoration:none;font-weight:700;padding:15px 30px;border-radius:999px;font-size:14px;letter-spacing:.06em;text-transform:uppercase}
+  .btn-s{background:var(--stone);color:var(--green)}
+  .btn-s:hover{background:#fff}
+  .btn-g{border:1.5px solid #bcd3a8;color:#eef3e3;margin-left:10px}
+  @media(max-width:520px){.btn-g{margin:10px 0 0}}
+  .trustrow{display:flex;flex-wrap:wrap;gap:10px 28px;justify-content:center;margin-top:32px;font-size:14px;font-weight:600;color:#c9d8ba}
+  .trustrow span:before{content:"❧ ";color:#bcd3a8}
+
+  section{padding:62px 0}
+  .sec-head{margin-bottom:30px}
+  .sec-head.center{text-align:center}
+  .sec-head h2{font-size:clamp(27px,3.6vw,40px);margin-top:10px}
+  .sec-head p{color:var(--soft);max-width:640px;margin-top:8px}
+  .sec-head.center p{margin-left:auto;margin-right:auto}
+
+  /* gallery */
+  .gal{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:18px}
+  .gcard{border-radius:6px;overflow:hidden;background:var(--white);box-shadow:0 6px 22px rgba(30,61,42,.1)}
+  .gcard .scene{height:230px;position:relative}
+  .gcard svg{width:100%;height:100%;display:block}
+  .gcard .cap{padding:16px 20px}
+  .gcard .cap b{font-family:Georgia,serif;font-size:17px;color:var(--green);font-weight:600;display:block}
+  .gcard .cap span{color:var(--soft);font-size:14px}
+
+  .cta-band{background:var(--green);border-radius:8px;color:#eef3e3;padding:30px 34px;display:flex;flex-wrap:wrap;gap:16px;align-items:center;justify-content:space-between;margin-top:28px}
+  .cta-band h3{color:#f6f1e0;font-size:24px}
+  .cta-band p{color:#c9d8ba;font-size:15px}
+  .cta-band a{background:var(--stone);color:var(--green);text-decoration:none;font-weight:700;padding:13px 26px;border-radius:999px;text-transform:uppercase;font-size:13px;letter-spacing:.06em;white-space:nowrap}
+
+  /* services */
+  .svc-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:18px}
+  .svc{background:var(--white);border:1px solid var(--line);border-radius:6px;padding:26px}
+  .svc .ic{font-size:28px;margin-bottom:10px}
+  .svc h3{font-size:19px;margin-bottom:6px}
+  .svc p{color:var(--soft);font-size:15px}
+  .price{margin-top:12px;font-family:Georgia,serif;color:var(--green2);font-size:19px}
+  .price small{font-family:"Segoe UI",sans-serif;color:var(--soft);font-size:11px;letter-spacing:.12em;text-transform:uppercase}
+
+  /* process */
+  .process{background:var(--green);color:#eef3e3}
+  .process h2{color:#f6f1e0}
+  .process .over{color:#bcd3a8}
+  .process .sec-head p{color:#c9d8ba}
+  .steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:18px}
+  .step{border:1px solid rgba(216,205,180,.35);border-radius:6px;padding:26px;background:rgba(255,255,255,.04)}
+  .step .num{font-family:Georgia,serif;font-size:40px;color:#bcd3a8;line-height:1}
+  .step h3{color:#f6f1e0;font-size:19px;margin:10px 0 6px}
+  .step p{color:#c9d8ba;font-size:15px}
+
+  .tip{background:var(--stone);border-left:6px solid var(--green2);border-radius:4px;padding:22px 26px}
+  .tip h3{font-size:19px;margin-bottom:6px}
+  .tip p{color:#4c5546;font-size:15px}
+
+  .ratingline{font-size:18px;font-weight:700;color:var(--green);margin-bottom:24px;font-family:Georgia,serif}
+  .ratingline .stars{color:#c99a2e;letter-spacing:3px;font-size:21px}
+  .rev-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:18px}
+  .rev{background:var(--white);border:1px solid var(--line);border-radius:6px;padding:26px}
+  .rev .stars{color:#c99a2e;letter-spacing:2px}
+  .rev p{color:var(--ink);margin:10px 0 14px;font-size:15px;font-style:italic}
+  .rev b{color:var(--green2);font-size:13px;letter-spacing:.06em;text-transform:uppercase;font-style:normal}
+
+  .areas{display:flex;flex-wrap:wrap;gap:10px}
+  .chip{background:var(--white);border:1px solid var(--line);padding:8px 16px;border-radius:999px;font-size:14px}
+  .info-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:16px;margin-top:22px}
+  .info{background:var(--white);border:1px solid var(--line);border-radius:6px;padding:22px}
+  .info b{display:block;color:var(--moss);text-transform:uppercase;font-size:11px;letter-spacing:.2em;margin-bottom:6px}
+  .info a{color:var(--green);font-weight:700;text-decoration:none;font-size:18px}
+
+  .formsec{background:var(--white);border:1px solid var(--line);border-radius:8px;padding:38px}
+  form{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+  @media(max-width:640px){form{grid-template-columns:1fr}}
+  label{font-size:12px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--green2);display:block;margin-bottom:6px}
+  input,select,textarea{width:100%;padding:13px;border:1px solid var(--line);border-radius:4px;font-size:15px;background:var(--sand);font-family:inherit;color:var(--ink)}
+  textarea{grid-column:1/-1;min-height:96px}
+  button.submit{background:var(--green);color:#f6f1e0;border:none;padding:16px;font-weight:700;text-transform:uppercase;letter-spacing:.08em;font-size:15px;border-radius:999px;cursor:pointer;grid-column:1/-1}
+  button.submit:hover{background:var(--green2)}
+  .formnote{grid-column:1/-1;font-size:13px;color:var(--soft);text-align:center}
+
+  footer{background:var(--green);color:#a9bf9c;padding:46px 0 92px;font-size:14px}
+  footer .fbrand{color:#f6f1e0;font-family:Georgia,serif;font-size:20px;margin-bottom:10px}
+  footer .fbrand span{color:#bcd3a8}
+  footer a{color:#e8dcbb;font-weight:700;text-decoration:none}
+  .demoflag{margin-top:22px;border-top:1px solid rgba(216,205,180,.3);padding-top:18px;font-size:13px;color:#7d9b74}
+
+  .sticky-call{position:fixed;left:0;right:0;bottom:0;z-index:80;background:var(--green);color:#f6f1e0;text-align:center;padding:14px;font-weight:700;text-transform:uppercase;letter-spacing:.06em;font-size:15px;text-decoration:none;box-shadow:0 -4px 18px rgba(30,61,42,.4)}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="#">Green<span>Scape</span><small>Outdoor Living · Nashville TN</small></a>
+    <nav class="links">
+      <a href="#gallery">Projects</a>
+      <a href="#services">Services</a>
+      <a href="#process">Process</a>
+      <a href="#quote" class="callbtn">Free Quote</a>
+    </nav>
+  </div>
+</header>
+
+<div class="hero">
+  <div class="wrap">
+    <div class="over">Landscape Design · Build · Care</div>
+    <h1>Gardens and outdoor rooms, <i>built to be lived in</i></h1>
+    <p>GreenScape designs, builds and looks after Nashville's outdoor spaces - from full garden transformations to the weekly care that keeps them beautiful.</p>
+    <a class="btn btn-s" href="#quote">Request a Free Quote</a>
+    <a class="btn btn-g" href="tel:+16155550176">Call (615) 555-0176</a>
+    <div class="trustrow">
+      <span>Licensed &amp; insured</span><span>Design-build, one crew start to finish</span><span>4.9★ · 410+ Google reviews</span><span>Free on-site quotes</span>
+    </div>
+  </div>
+</div>
+
+<section id="gallery">
+  <div class="wrap">
+    <div class="sec-head center">
+      <div class="over">Recent Projects</div>
+      <h2>Our work speaks first</h2>
+      <p>A look at recent Nashville projects - every one designed around how the family actually uses their garden.</p>
+    </div>
+    <div class="gal">
+      <div class="gcard">
+        <div class="scene"><svg viewBox="0 0 400 230" preserveAspectRatio="none"><rect width="400" height="230" fill="#a8c69f"/><rect y="150" width="400" height="80" fill="#5d8a4e"/><ellipse cx="70" cy="70" rx="55" ry="42" fill="#3d6b34"/><ellipse cx="330" cy="60" rx="65" ry="48" fill="#4a7a3e"/><rect x="160" y="120" width="90" height="55" fill="#d8cdb4"/><rect x="175" y="132" width="60" height="30" fill="#b8ab8d"/><circle cx="120" cy="140" r="16" fill="#e2795b"/><circle cx="285" cy="145" r="16" fill="#7a5fb5"/></svg></div>
+        <div class="cap"><b>Stone Terrace &amp; Fire Pit</b><span>Franklin - natural stone patio, seating wall and wood-burning fire pit</span></div>
+      </div>
+      <div class="gcard">
+        <div class="scene"><svg viewBox="0 0 400 230" preserveAspectRatio="none"><rect width="400" height="230" fill="#bcd8ae"/><rect y="165" width="400" height="65" fill="#6d9a58"/><path d="M0 165 Q 100 140 200 160 T 400 150 V230 H0 Z" fill="#598549"/><ellipse cx="200" cy="95" rx="90" ry="30" fill="#7ec3e8"/><ellipse cx="200" cy="95" rx="90" ry="30" fill="none" stroke="#e9e2d4" stroke-width="7"/><rect x="40" y="60" width="12" height="70" fill="#7a5c3e"/><ellipse cx="46" cy="48" rx="34" ry="26" fill="#3d6b34"/><rect x="345" y="60" width="12" height="70" fill="#7a5c3e"/><ellipse cx="351" cy="48" rx="34" ry="26" fill="#4a7a3e"/></svg></div>
+        <div class="cap"><b>Pool Garden &amp; Lawn</b><span>Brentwood - pool surround planting, new turf and shade trees</span></div>
+      </div>
+      <div class="gcard">
+        <div class="scene"><svg viewBox="0 0 400 230" preserveAspectRatio="none"><rect width="400" height="230" fill="#cfe0bd"/><rect y="150" width="400" height="80" fill="#7ba465"/><rect x="0" y="128" width="400" height="14" fill="#9c8465"/><rect x="30" y="100" width="10" height="42" fill="#9c8465"/><rect x="120" y="100" width="10" height="42" fill="#9c8465"/><rect x="210" y="100" width="10" height="42" fill="#9c8465"/><rect x="300" y="100" width="10" height="42" fill="#9c8465"/><circle cx="70" cy="180" r="13" fill="#e8a2c0"/><circle cx="180" cy="195" r="13" fill="#f2d06b"/><circle cx="290" cy="180" r="13" fill="#ffffff"/><circle cx="350" cy="200" r="13" fill="#e2795b"/></svg></div>
+        <div class="cap"><b>Cedar Fence &amp; Flower Beds</b><span>East Nashville - privacy fencing with layered perennial borders</span></div>
+      </div>
+      <div class="gcard">
+        <div class="scene"><svg viewBox="0 0 400 230" preserveAspectRatio="none"><rect width="400" height="230" fill="#d5e3c5"/><path d="M0 190 L400 150 V230 H0 Z" fill="#86ab6e"/><rect x="0" y="168" width="400" height="16" fill="#c4b895"/><rect x="0" y="140" width="400" height="14" fill="#d8cdb4"/><ellipse cx="90" cy="80" rx="50" ry="38" fill="#48765a"/><ellipse cx="315" cy="75" rx="55" ry="40" fill="#3d6b34"/><rect x="185" y="95" width="34" height="50" fill="#8a6d4a"/></svg></div>
+        <div class="cap"><b>Tiered Retaining Wall Garden</b><span>Belle Meade - stone retaining walls turning a slope into three garden rooms</span></div>
+      </div>
+      <div class="gcard">
+        <div class="scene"><svg viewBox="0 0 400 230" preserveAspectRatio="none"><rect width="400" height="230" fill="#b7d3a4"/><rect y="155" width="400" height="75" fill="#67955200"/><rect y="155" width="400" height="75" fill="#679552"/><path d="M150 230 L185 155 H215 L250 230 Z" fill="#e9e2d4"/><circle cx="60" cy="120" r="22" fill="#f2d06b"/><circle cx="340" cy="115" r="22" fill="#e8a2c0"/><rect x="52" y="120" width="16" height="45" fill="#48765a"/><rect x="332" y="115" width="16" height="50" fill="#48765a"/></svg></div>
+        <div class="cap"><b>Front Garden &amp; Stone Path</b><span>Green Hills - welcoming entry planting with a curved stone walkway</span></div>
+      </div>
+      <div class="gcard">
+        <div class="scene"><svg viewBox="0 0 400 230" preserveAspectRatio="none"><rect width="400" height="230" fill="#9db98d"/><rect y="140" width="400" height="90" fill="#557d43"/><rect x="120" y="80" width="160" height="70" fill="#6d5136"/><rect x="120" y="70" width="160" height="14" fill="#543e28"/><rect x="145" y="105" width="30" height="45" fill="#e9e2d4"/><rect x="225" y="105" width="30" height="45" fill="#e9e2d4"/><ellipse cx="55" cy="105" rx="38" ry="30" fill="#3d6b34"/><ellipse cx="348" cy="105" rx="38" ry="30" fill="#3d6b34"/></svg></div>
+        <div class="cap"><b>Pergola &amp; Outdoor Kitchen</b><span>Franklin - shaded pergola, cooking station and dining lawn</span></div>
+      </div>
+    </div>
+    <div class="cta-band">
+      <div><h3>Like what you see?</h3><p>Every project starts with a free on-site visit and a written quote.</p></div>
+      <a href="#quote">Get My Free Quote</a>
+    </div>
+  </div>
+</section>
+
+<section id="services" style="padding-top:0">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="over">Services</div>
+      <h2>Design, build and ongoing care</h2>
+      <p>One team for the whole life of your garden - no hand-offs, no finger-pointing between contractors.</p>
+    </div>
+    <div class="svc-grid">
+      <div class="svc"><div class="ic">✏️</div><h3>Landscape Design + Build</h3><p>Full garden transformations with scaled plans, planting schemes and our own build crew.</p><div class="price"><small>Projects from</small> $7,500</div></div>
+      <div class="svc"><div class="ic">🌱</div><h3>Lawn Care &amp; Maintenance</h3><p>Mowing, edging, feeding, aeration and seasonal cleanups on a simple monthly plan.</p><div class="price"><small>From</small> $180/mo</div></div>
+      <div class="svc"><div class="ic">💧</div><h3>Irrigation Systems</h3><p>Smart sprinkler and drip systems designed for your beds, with seasonal servicing.</p><div class="price"><small>Install from</small> $2,800</div></div>
+      <div class="svc"><div class="ic">🪵</div><h3>Fencing</h3><p>Cedar, privacy and picket fencing built straight, strong and finished neatly.</p><div class="price"><small>From</small> $45 / linear ft</div></div>
+      <div class="svc"><div class="ic">🧱</div><h3>Patios &amp; Hardscaping</h3><p>Stone and paver patios, walkways and outdoor kitchens built on proper foundations.</p><div class="price"><small>From</small> $3,600</div></div>
+      <div class="svc"><div class="ic">⛰️</div><h3>Retaining Walls</h3><p>Engineered walls that turn slopes into usable, beautiful terraced space.</p><div class="price"><small>From</small> $85 / sq ft face</div></div>
+      <div class="svc"><div class="ic">🍂</div><h3>Seasonal Cleanups</h3><p>Spring wake-ups and autumn put-to-beds: pruning, mulching, leaf clearing and bed refresh.</p><div class="price"><small>From</small> $299</div></div>
+      <div class="svc"><div class="ic">🌳</div><h3>Planting &amp; Trees</h3><p>Trees, shrubs and perennial planting chosen for Nashville soil and summers, guaranteed to establish.</p><div class="price"><small>Quoted per plan</small></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="process" id="process">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="over">How It Works</div>
+      <h2>From first visit to a garden that keeps improving</h2>
+      <p>The same four steps behind every project in our gallery.</p>
+    </div>
+    <div class="steps">
+      <div class="step"><div class="num">01</div><h3>Consult</h3><p>We walk your garden together, listen to how you want to use it, and measure up - free of charge.</p></div>
+      <div class="step"><div class="num">02</div><h3>Design</h3><p>You receive a scaled plan, planting list and one fixed written price. No allowances, no surprises.</p></div>
+      <div class="step"><div class="num">03</div><h3>Build</h3><p>Our own crew builds it - tidy site, daily updates, and a walkthrough together before we call it done.</p></div>
+      <div class="step"><div class="num">04</div><h3>Maintain</h3><p>Optional care plans keep it thriving: feeding, pruning, irrigation checks and seasonal refreshes.</p></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="tip">
+      <h3>🍁 This season's garden note</h3>
+      <p>Autumn is the best planting season in Tennessee - warm soil and cool air let roots settle before summer stress. If you are planning new trees, shrubs or a lawn renovation, a quote this month means planting at exactly the right time.</p>
+    </div>
+    <div style="margin-top:44px">
+      <div class="sec-head"><div class="over">Reviews</div><h2>Neighbours who trust us with their gardens</h2></div>
+      <div class="ratingline"><span class="stars">★★★★★</span> 4.9 rating · 410+ verified Google reviews</div>
+      <div class="rev-grid">
+        <div class="rev"><div class="stars">★★★★★</div><p>"They turned our sloped, muddy backyard into terraces we use every single day. The crew was polite, tidy and finished a day early."</p><b>The Hendersons - Belle Meade</b></div>
+        <div class="rev"><div class="stars">★★★★★</div><p>"Two years on their maintenance plan and our garden has never looked better. They notice things before they become problems."</p><b>Carol F. - Brentwood</b></div>
+        <div class="rev"><div class="stars">★★★★★</div><p>"The design alone was worth it - a proper plan we could actually picture. Build matched it exactly, for exactly the quoted price."</p><b>James &amp; Priya O. - Franklin</b></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section style="padding-top:0">
+  <div class="wrap">
+    <div class="sec-head"><div class="over">Service Area</div><h2>Working across greater Nashville</h2></div>
+    <div class="areas">
+      <span class="chip">Nashville</span><span class="chip">Franklin</span><span class="chip">Brentwood</span><span class="chip">Belle Meade</span>
+      <span class="chip">Green Hills</span><span class="chip">East Nashville</span><span class="chip">Hendersonville</span><span class="chip">Murfreesboro</span>
+      <span class="chip">Mt. Juliet</span><span class="chip">Spring Hill</span><span class="chip">Cool Springs</span><span class="chip">Bellevue</span>
+    </div>
+    <div class="info-grid">
+      <div class="info"><b>Phone</b><a href="tel:+16155550176">(615) 555-0176</a></div>
+      <div class="info"><b>Studio</b>118 Gallatin Ave, Nashville, TN 37206</div>
+      <div class="info"><b>Hours</b>Mon-Fri, 8:00am - 5:00pm</div>
+      <div class="info"><b>Quotes</b>Free on-site visits across our service area</div>
+    </div>
+  </div>
+</section>
+
+<section style="padding-top:0">
+  <div class="wrap">
+    <div class="formsec" id="quote">
+      <div class="sec-head">
+        <div class="over">Free Quote</div>
+        <h2>Start with a free garden visit</h2>
+        <p>Tell us a little about your space and what you are dreaming of. We will call to arrange a visit, measure up and leave you a written quote - no obligation.</p>
+      </div>
+      <form onsubmit="event.preventDefault();alert('Thanks! GreenScape will call you to arrange your free visit.');">
+        <div><label for="l-name">Your name</label><input id="l-name" type="text" placeholder="Full name" required></div>
+        <div><label for="l-phone">Phone</label><input id="l-phone" type="tel" placeholder="(615) 555-0000" required></div>
+        <div><label for="l-svc">What are you planning?</label>
+          <select id="l-svc"><option>Full garden design + build</option><option>Patio / hardscaping</option><option>Fencing</option><option>Irrigation</option><option>Lawn care plan</option><option>Seasonal cleanup</option><option>Not sure yet</option></select></div>
+        <div><label for="l-area">Your area</label><input id="l-area" type="text" placeholder="e.g. Franklin"></div>
+        <textarea placeholder="Tell us about your garden - size, what you love, what frustrates you, and what you'd like it to become."></textarea>
+        <button class="submit" type="submit">Request My Free Visit</button>
+        <div class="formnote">Free on-site quote with a written fixed price. No obligation, no pressure.</div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="fbrand">Green<span>Scape</span> Outdoor Living</div>
+    <p>118 Gallatin Ave, Nashville, TN 37206 · <a href="tel:+16155550176">(615) 555-0176</a></p>
+    <p style="margin-top:6px">Landscape design, build and garden care across greater Nashville.</p>
+    <div class="demoflag">
+      <p>Concept demo website designed by Azher for landscaping businesses. Not a real business.</p>
+      <p style="margin-top:4px">Designed by Azher · Malegaon, Maharashtra 423203, India</p>
+    </div>
+  </div>
+</footer>
+
+<a class="sticky-call" href="tel:+16155550176">☎ Tap to Call - (615) 555-0176</a>
+
+</body>
+</html>
